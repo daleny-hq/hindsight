@@ -33,7 +33,7 @@ Output must show:
 Create a chezmoi template at `~/.dotfiles/private_dot_secrets/private_hindsight.env.tmpl`:
 
 ```
-DATABASE_URL=postgresql://hindsight:{{ onepasswordRead "op://Personal/hindsight_db/credential" }}@<home-server>:5432/hindsight
+DATABASE_URL=postgresql://hindsight:{{ onepasswordRead "op://API Keys/hindsight_db/credential" }}@<home-server>:5432/hindsight
 ```
 
 Apply:
